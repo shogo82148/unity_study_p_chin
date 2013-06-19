@@ -1,8 +1,10 @@
 using UnityEngine;
 using System.Collections;
 
-public class up : MonoBehaviour {
-
+public class FuguMove : MonoBehaviour {
+	
+	float Speed = 3.0f;
+	
 	// Use this for initialization
 	void Start () {
 	
@@ -17,6 +19,6 @@ public class up : MonoBehaviour {
 		float horizontal = Input.GetAxis("Horizontal");
 		float vertical = Input.GetAxis("Vertical");
 		
-		transform.Translate(new Vector3(horizontal, 0, vertical) * Time.deltaTime);
+		transform.Translate(new Vector3(horizontal, 0, vertical) * Time.deltaTime * Speed);
 	}
 }
