@@ -3,7 +3,7 @@ using System.Collections;
 
 public class FuguMove : MonoBehaviour {
 	
-	float Speed = 3.0f;
+	public float Speed = 3.0f;
 	
 	// Use this for initialization
 	void Start () {
